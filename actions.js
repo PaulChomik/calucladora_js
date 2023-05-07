@@ -124,7 +124,9 @@ function n_parentesis_izq()
 function igual()
 {
 	const a1=document.getElementById('fname');
-	let    a=eval(a1.value);
-
+	let    a=a1.value;
+	a=a.replace('×', '*');
+	a=a.replace('÷', '/');
+	a=eval(a);
 	a1.value=+a;
 }
