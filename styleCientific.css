@@ -1,0 +1,96 @@
+
+.cuerpo
+{
+	background-color: #ffffff;
+   background-image: linear-gradient(315deg, #ffffff 0%, #1b2845 74%);
+	animation: gradient 27s ease infinite;
+	background-size: 400% 400%;
+	margin: 10px;
+	padding: 20px;
+	width:200px;
+	border-radius: 10px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+.pantalla
+{/*
+	background-color: rgb(255, 255, 255);
+	padding: 10px;
+	width:auto;
+*/}
+
+
+input
+{
+	width: 173px;
+	height: 70px;
+	margin:0 auto;
+	padding: 0 11px;
+	border-radius: 5px;
+	font-family: 'Calculator', sans-serif;
+	font-size:25px;
+	 /* Verdana !important*/
+}
+
+.botonera
+{
+	width:90%;height:100px;
+	background-color:#ff80df;
+	padding: 10px;
+    background-image: linear-gradient(315deg, #ffffff 0%, #1b2845 74%);
+	animation: gradient 27s ease infinite;
+	background-size: 400% 400%;
+	border-radius: 7px;
+}
+
+
+.numeros
+{
+	float: left;
+	ackground-color:#ff80df;
+    width: 105px;height: 30px;
+}
+
+.operaciones
+{
+	float: right;
+}
+
+.boton
+{
+   width: 30px;height: 25px;
+   border-radius: 4px;
+   background-color: #378b29;
+   background-image: linear-gradient(5deg, #b3e6ff 0%, #e6e6ff 74%);
+   
+}
+
+.botonCE
+{
+	border-radius: 4px;
+	width: 30px;height: 25px;
+	background-color:#99ff99;
+   background-image: linear-gradient(5deg, #ff4d4d 0%, #ffcccc 34%)
+}
+
+.botonIGUAL
+{
+	width: 30px;height: 25px;
+   border-radius: 4px;
+	background-color:#99ff99;
+   background-image: linear-gradient(5deg, #00e600 0%, #ccffcc 54%)
+}
+

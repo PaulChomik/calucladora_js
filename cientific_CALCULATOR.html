@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora CIENTIFICA</title>
+	<LINK href="styleCientific.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
+	<style>  @import url('https://fonts.cdnfonts.com/css/calculator');</style>
+	<script src="actions.js"></script>
+                
+                
+</head>
+<body style="background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 70%); 
+height: 100%;width: 100%;background-repeat: no-repeat;
+    background-attachment: fixed;">
+	    <!-- -->
+
+	    <!-- Cuerpo de la Calculadora -->
+		<div class="cuerpo">
+		       
+		       <!--Pantalla de la calculadora -->
+    		<div class="pantalla">
+    			<!-- -->
+    			<input type="text" id="fname" name="fname"  onkeydown="igual()" ><br><br>
+    		</div>
+
+    		<!--Botonera CIENTIFICA-->
+
+<div  class="botonera" style="margin-bottom:5px ;">
+
+    				<!--Numeros -->
+    				<div class="numeros">
+    					<!-- FILA-->
+    					<div>
+    						 <button type="button" onclick="n_one()"  class="boton">x²</button> 
+	    					 <button type="button" onclick="n_dos()"  class="boton">x³</button> 
+	    					 <button type="button" onclick="n_tres()" class="boton">xʸ</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						<button type="button" onclick="n_for()"  class="boton">√</button> 
+	    					<button type="button" onclick="n_five()" class="boton">³√</button> 
+	    					<button type="button" onclick="n_six()"  class="boton">ʸ√</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						<button type="button" onclick="n_7()" class="boton">sin</button> 
+    						<button type="button" onclick="n_8()" class="boton">cos</button> 
+    					 	<button type="button" onclick="n_9()" class="boton">tan</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						<button type="button" onclick="n_point()" class="boton">º</button> 
+    					 	<button type="button" onclick="n_0()"     class="boton">`</button> 
+    					 	<button type="button" onclick="n_pi()"    class="boton">eng</button> 
+    					</div>
+    					 
+    				</div>
+
+    				<!-- Operaciones-->
+    				<div class="operaciones">
+    					<!-- FILA-->
+    					<div>
+    						 <button type="button" onclick="igual()" class="botonIGUAL">e</button> 
+	    					 <button type="button" onclick="reset()" class="botonCE">eʸ</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						 <button type="button" onclick="n_mas()" class="boton">log</button> 
+	    					 <button type="button" onclick="n_menos()" class="boton">ln</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						 <button type="button" onclick="n_por()" class="boton">▲</button> 
+	    					 <button type="button" onclick="n_divide()" class="boton">▼</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						 <button type="button" onclick="n_parentesis_der()" 
+    						 class="boton">Ans</button> 
+	    					 <button type="button" onclick="n_parentesis_izq()" 
+	    					 class="boton">rnd</button> 
+    					</div>
+    				</div>
+    		</div>
+
+
+
+    				<!--Botonera -->
+    		<div  class="botonera">
+
+    				<!--Numeros -->
+    				<div class="numeros">
+    					<!-- FILA-->
+    					<div>
+    						 <button type="button" onclick="n_one()"  class="boton">1</button> 
+	    					 <button type="button" onclick="n_dos()"  class="boton">2</button> 
+	    					 <button type="button" onclick="n_tres()" class="boton">3</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						<button type="button" onclick="n_for()"  class="boton">4</button> 
+	    					<button type="button" onclick="n_five()" class="boton">5</button> 
+	    					<button type="button" onclick="n_six()"  class="boton">6</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						<button type="button" onclick="n_7()" class="boton">7</button> 
+    						<button type="button" onclick="n_8()" class="boton">8</button> 
+    					 	<button type="button" onclick="n_9()" class="boton">9</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						<button type="button" onclick="n_point()" class="boton">·</button> 
+    					 	<button type="button" onclick="n_0()"     class="boton">0</button> 
+    					 	<button type="button" onclick="n_pi()"    class="boton">π</button> 
+    					</div>
+    					 
+    				</div>
+
+    				<!-- Operaciones-->
+    				<div class="operaciones">
+    					<!-- FILA-->
+    					<div>
+    						 <button type="button" onclick="igual()" class="botonIGUAL">=</button> 
+	    					 <button type="button" onclick="reset()" class="botonCE">CE</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						 <button type="button" onclick="n_mas()" class="boton">+</button> 
+	    					 <button type="button" onclick="n_menos()" class="boton">-</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						 <button type="button" onclick="n_por()" class="boton">×</button> 
+	    					 <button type="button" onclick="n_divide()" class="boton">÷</button> 
+    					</div>
+    					<!-- FILA-->
+    					<div>
+    						 <button type="button" onclick="n_parentesis_der()" 
+    						 class="boton">(</button> 
+	    					 <button type="button" onclick="n_parentesis_izq()" 
+	    					 class="boton">)</button> 
+    					</div>
+    				</div>
+    		</div>
+    	
+
+		</div>
+</body>
+</html>
